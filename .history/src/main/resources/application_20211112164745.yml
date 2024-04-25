@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//10.20.33.42:11521/TC319P
+    username: cb
+    password: wasserflasche
+    driver-class-name: oracle.jdbc.OracleDriver
+    hikari:
+     minimumIdle: 5
+     maximumPoolSize: 20
+     idleTimeout: 30000
+     maxLifetime: 2000000
+     connectionTimeout: 30000
+     poolName: HikariPoolBooks
+
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate.use-new-id-generator-mappings: false
+    hibernate.ddl-auto: create
+
+mode: dev

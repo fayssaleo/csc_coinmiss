@@ -1,0 +1,10 @@
+com\example\oracleconnectiondemo\config\DbConnection.class
+com\example\oracleconnectiondemo\repository\ContainerRepository.class
+com\example\oracleconnectiondemo\DTO\DamagedContainerDTO.class
+com\example\oracleconnectiondemo\repository\ContainerRepositoryImpl.class
+com\example\oracleconnectiondemo\DTO\ContainerDTO.class
+com\example\oracleconnectiondemo\web\ContainerResource.class
+com\example\oracleconnectiondemo\helper\Fixtures.class
+com\example\oracleconnectiondemo\OracleConnectionDemoApplication.class
+com\example\oracleconnectiondemo\service\ContainerService.class
+com\example\oracleconnectiondemo\domain\Container.class

@@ -1,0 +1,22 @@
+version: "3.7"
+
+# Define services
+services:
+  odc:
+    container_name: odc
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    restart: always
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:oracle:thin:@//10.20.33.42:11521/TC319P
+      SPRING_DATASOURCE_USERNAME: coinmiss
+      SPRING_DATASOURCE_PASSWORD: wasserflasche
+      mode: preprod
+    networks:
+      - csc_api
+networks:
+  csc_api:
+    external: true
